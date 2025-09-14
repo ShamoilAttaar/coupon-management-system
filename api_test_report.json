@@ -1,0 +1,143 @@
+{
+  "summary": {
+    "total_tests": 22,
+    "passed": 21,
+    "failed": 1,
+    "success_rate": 95.45454545454545,
+    "timestamp": "2025-09-14T12:18:56.703271"
+  },
+  "test_results": [
+    {
+      "test": "Root Endpoint",
+      "status": "\u2705 PASS",
+      "details": "Status: 200, Message: Coupon Management System API",
+      "timestamp": "2025-09-14T12:18:56.655467"
+    },
+    {
+      "test": "Health Check",
+      "status": "\u2705 PASS",
+      "details": "Status: 200, Health: healthy",
+      "timestamp": "2025-09-14T12:18:56.656749"
+    },
+    {
+      "test": "Create Cart-wise Coupon",
+      "status": "\u2705 PASS",
+      "details": "ID: 6, Status: 201",
+      "timestamp": "2025-09-14T12:18:56.665626"
+    },
+    {
+      "test": "Create Product-wise Coupon",
+      "status": "\u2705 PASS",
+      "details": "ID: 7, Status: 201",
+      "timestamp": "2025-09-14T12:18:56.668300"
+    },
+    {
+      "test": "Create BxGy Coupon",
+      "status": "\u2705 PASS",
+      "details": "ID: 8, Status: 201",
+      "timestamp": "2025-09-14T12:18:56.670464"
+    },
+    {
+      "test": "Get All Coupons",
+      "status": "\u2705 PASS",
+      "details": "Status: 200, Count: 8",
+      "timestamp": "2025-09-14T12:18:56.672670"
+    },
+    {
+      "test": "Get Specific Coupon",
+      "status": "\u2705 PASS",
+      "details": "ID: 6, Status: 200",
+      "timestamp": "2025-09-14T12:18:56.674606"
+    },
+    {
+      "test": "Update Coupon",
+      "status": "\u2705 PASS",
+      "details": "ID: 6, Status: 200",
+      "timestamp": "2025-09-14T12:18:56.677952"
+    },
+    {
+      "test": "Get Applicable Coupons",
+      "status": "\u2705 PASS",
+      "details": "Status: 200, Applicable: 6",
+      "timestamp": "2025-09-14T12:18:56.680278"
+    },
+    {
+      "test": "Apply Cart-wise Coupon",
+      "status": "\u274c FAIL",
+      "details": "Status: 400",
+      "timestamp": "2025-09-14T12:18:56.681874"
+    },
+    {
+      "test": "Apply Product-wise Coupon",
+      "status": "\u2705 PASS",
+      "details": "Discount: $30.0, Final Price: $310.0",
+      "timestamp": "2025-09-14T12:18:56.684053"
+    },
+    {
+      "test": "Apply BxGy Coupon",
+      "status": "\u2705 PASS",
+      "details": "Discount: $25.0, Final Price: $315.0",
+      "timestamp": "2025-09-14T12:18:56.685716"
+    },
+    {
+      "test": "Invalid Coupon ID",
+      "status": "\u2705 PASS",
+      "details": "Status: 400, Expected: 400",
+      "timestamp": "2025-09-14T12:18:56.687079"
+    },
+    {
+      "test": "Inapplicable Coupon",
+      "status": "\u2705 PASS",
+      "details": "Status: 400, Expected: 400",
+      "timestamp": "2025-09-14T12:18:56.688422"
+    },
+    {
+      "test": "Get Non-existent Coupon",
+      "status": "\u2705 PASS",
+      "details": "Status: 404, Expected: 404",
+      "timestamp": "2025-09-14T12:18:56.690044"
+    },
+    {
+      "test": "Invalid Coupon Data",
+      "status": "\u2705 PASS",
+      "details": "Status: 422, Expected: 422",
+      "timestamp": "2025-09-14T12:18:56.691767"
+    },
+    {
+      "test": "Empty Cart",
+      "status": "\u2705 PASS",
+      "details": "Status: 200, Applicable: 0",
+      "timestamp": "2025-09-14T12:18:56.693328"
+    },
+    {
+      "test": "Zero Price Items",
+      "status": "\u2705 PASS",
+      "details": "Status: 200",
+      "timestamp": "2025-09-14T12:18:56.694716"
+    },
+    {
+      "test": "Large Quantity Cart",
+      "status": "\u2705 PASS",
+      "details": "Status: 200",
+      "timestamp": "2025-09-14T12:18:56.696156"
+    },
+    {
+      "test": "Delete Coupon 6",
+      "status": "\u2705 PASS",
+      "details": "Status: 204",
+      "timestamp": "2025-09-14T12:18:56.698981"
+    },
+    {
+      "test": "Delete Coupon 7",
+      "status": "\u2705 PASS",
+      "details": "Status: 204",
+      "timestamp": "2025-09-14T12:18:56.701278"
+    },
+    {
+      "test": "Delete Coupon 8",
+      "status": "\u2705 PASS",
+      "details": "Status: 204",
+      "timestamp": "2025-09-14T12:18:56.703242"
+    }
+  ]
+}
