@@ -25,6 +25,7 @@ A comprehensive RESTful API for managing and applying different types of discoun
 - [API Compliance](#api-compliance)
 - [Future Improvements](#future-improvements)
 
+<a id="installation"></a>
 ## 🛠 Installation
 
 1. **Clone the repository**
@@ -50,6 +51,7 @@ A comprehensive RESTful API for managing and applying different types of discoun
    - Swagger UI: `http://localhost:8000/docs`
    - ReDoc: `http://localhost:8000/redoc`
 
+<a id="api-endpoints"></a>
 ## 🔗 API Endpoints
 
 ### Coupon Management
@@ -70,6 +72,7 @@ A comprehensive RESTful API for managing and applying different types of discoun
 - `GET /` - Root endpoint
 - `GET /health` - Health check endpoint
 
+<a id="coupon-types"></a>
 ## 🎫 Coupon Types
 
 ### 1. Cart-wise Coupons
@@ -130,6 +133,7 @@ Buy specified quantities of certain products and get other products for free.
 }
 ```
 
+<a id="implemented-use-cases"></a>
 ## ✅ Implemented Use Cases
 
 ### Basic Coupon Operations
@@ -167,6 +171,7 @@ Buy specified quantities of certain products and get other products for free.
 4. **Invalid Coupon IDs**: Proper error handling for non-existent coupons
 5. **Empty Carts**: Handle empty or invalid cart data
 
+<a id="unimplemented-use-cases"></a>
 ## ❌ Unimplemented Use Cases
 
 ### Advanced Coupon Types
@@ -214,6 +219,7 @@ Buy specified quantities of certain products and get other products for free.
 3. **Rate Limiting**: Prevent abuse of coupon application endpoints
 4. **Bulk Operations**: Apply multiple coupons in single request
 
+<a id="assumptions"></a>
 ## 🔧 Assumptions
 
 ### Data Assumptions
@@ -238,6 +244,7 @@ Buy specified quantities of certain products and get other products for free.
 3. **Synchronous Processing**: All operations are synchronous
 4. **Single Instance**: No distributed system considerations
 
+<a id="limitations"></a>
 ## ⚠️ Limitations
 
 ### Current Implementation Limitations
@@ -270,6 +277,7 @@ Buy specified quantities of certain products and get other products for free.
 3. **No Brand Management**: No brand-based coupon support
 4. **No Price History**: No tracking of price changes
 
+<a id="testing"></a>
 ## 🧪 Testing
 
 ### Running Tests
@@ -295,6 +303,7 @@ pytest -v
 - **Edge Cases**: Comprehensive edge case testing
 - **Error Handling**: All error scenarios tested
 
+<a id="usage-examples"></a>
 ## 📖 Usage Examples
 
 ### Creating a Cart-wise Coupon
@@ -363,6 +372,7 @@ curl -X POST "http://localhost:8000/apply-coupon/1" \
   }'
 ```
 
+<a id="api-compliance"></a>
 ## ✅ API Compliance
 
 This implementation is **100% compliant** with the original task requirements:
@@ -410,6 +420,7 @@ This implementation is **100% compliant** with the original task requirements:
 - Comprehensive documentation ✅
 - Interactive API docs ✅
 
+<a id="future-improvements"></a>
 ## 🚀 Future Improvements
 
 ### Short-term Improvements
